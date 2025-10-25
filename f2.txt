@@ -6,6 +6,7 @@ class Main{
  public void main(){
    String s = "Prabhati";
    String s2 = "Bipin";
+   int k = 500;
   }
    //Jira 102
    public void m2(){
