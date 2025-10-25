@@ -1,0 +1,12 @@
+class Main{
+  public static void main(String[] args){
+   String s = "Prabhati";
+   Character firstNonRepeat = s.chars()
+      .mapToObj(x->(char)x)
+      .collect(Collectors.groupingBy(Function.identity(),LinkedHashMap::new,Collectors.counting()))
+      .entryset().stream()
+      .filter(x->x.getValue()==1)
+      .map(x->x.getKey())
+      .findFirst()
+      .orElse(null);
+System.out.println(firstNonRepeat);
