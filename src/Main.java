@@ -13,7 +13,7 @@ public class Main {
                .map(x->x.toLowerCase())
                .collect(Collectors.groupingBy(x->x,Collectors.counting()))
                .entrySet().stream()
-               .filter(x->x.getValue()==n)
+               .filter(x->x.getValue()!=n)
                .map(x->x.getKey())
                .collect(Collectors.toList());
         System.out.println(count);
