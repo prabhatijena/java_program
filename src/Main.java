@@ -11,6 +11,7 @@ public class Main {
        List<Integer> list1 = list.stream()
                .filter(x->x%2==0)
                .sorted()
+               .distinct()
                .collect(Collectors.toList());
         System.out.println(list1);
 
