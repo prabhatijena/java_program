@@ -8,4 +8,9 @@ class Main{
    int j = 20;
 
   }
+   //Jira 102
+   public void m2(){
+    double d = 29.0;
+    Boolean b = false;
+     
 }
