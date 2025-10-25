@@ -10,6 +10,7 @@ public class Main {
         List<String> lists = Arrays.asList("Prabhati","Bipin","Swetapadma","Lipi");
         List<String> sortedByLength = lists.stream()
                 .sorted(Comparator.comparingInt(String::length))
+                .limit(3)
                 .collect(Collectors.toList());
         System.out.println(sortedByLength);
 
