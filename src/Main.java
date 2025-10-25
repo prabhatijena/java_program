@@ -11,6 +11,7 @@ public class Main {
         List<String> sortedByLength = lists.stream()
                 .sorted(Comparator.comparingInt(String::length))
                 .distinct();
+                .limit(3)
                 .collect(Collectors.toList());
         System.out.println(sortedByLength);
 
