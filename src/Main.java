@@ -7,13 +7,11 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        List<String> lists = Arrays.asList("Prabhati","Bipin","Swetapadma","Lipi");
-        List<String> sortedByLength = lists.stream()
-                .sorted(Comparator.comparingInt(String::length))
-                .limit(3)
-                .distinct()
-                .collect(Collectors.toList());
-        System.out.println(sortedByLength);
+       List<Integer> list = Arrays.asList(1,2,3,41,2,3,5,6,7,2);
+       List<Integer> list1 = list.stream()
+               .filter(x->x%2==0)
+               .collect(Collectors.toList());
+        System.out.println(list1);
 
     }
 }
