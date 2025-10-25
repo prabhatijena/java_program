@@ -4,9 +4,8 @@ class Main{
    
    //JIRA 101
  public void main(){
-   int i = 10;
-   int j = 20;
-
+   String s = "Prabhati";
+   String s2 = "Bipin";
   }
    //Jira 102
    public void m2(){
