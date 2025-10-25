@@ -10,6 +10,7 @@ public class Main {
        List<Integer> list = Arrays.asList(1,2,3,41,2,3,5,6,7,2);
        List<Integer> list1 = list.stream()
                .filter(x->x%2==0)
+               .distinct()
                .collect(Collectors.toList());
         System.out.println(list1);
 
